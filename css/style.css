@@ -36,42 +36,41 @@ header{
     width: 20%;
     height: 100vh;
     background-color: #444;
+    transition: all 1.3s ease-in;
 }
 
-#sidebar-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    text-align: center;
-}
-
-#sidebar-header h2{
-    color: white;
-    font-size: 2em;
-    margin: 0;
-}
 
 #sidebar{
+    position: absolute;
+    top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 20px 10px;
     width: 100%;
     border-radius: 5px;
     gap: 20px;
+    overflow: hidden;
+}
+
+#sidebar h2{
+    color: white;
+    font-size: 2em;
+    margin: 0;
 }
 
 #sidebar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 #sidebar li{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    padding: 20px 10px;
+    padding: 5px;
     width: 100%;
     border-radius: 5px;
 }
@@ -81,13 +80,13 @@ header{
     text-decoration: none;
     text-align: center;
     font-size: large;
+    padding: 20px;
 }
 
 #sidebar a:hover{
     background-color: #555;
     color: white;
     border-radius: 5px;
-    padding: 10px;
 }
 
 
