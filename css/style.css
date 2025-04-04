@@ -162,13 +162,20 @@ header{
 #featured-courses{
     width: inherit;
     display: block;
+    text-align: center;
 }
+
 
 #announcements-section{
     width: inherit;
-
+    text-align: center;
 }
 
 #courses-section{
     width: inherit;
+}
+
+#featured-courses li, #announcements-section li, #courses-section li{
+    list-style: none;
+    text-decoration: none;
 }
