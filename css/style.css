@@ -95,7 +95,7 @@ header{
 
 
 #announcements-section{
-    width: inherit;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -117,15 +117,62 @@ header{
     border: 4px solid;
     box-shadow: 0 4px 8px black;
     border-radius: 10px;
-    width: 600px;
-    height: 400px;
+    width: 50%;
+    height: 500px;
+}
+
+#announcements-card{
+    background-color: #def31e;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+#announcements-list li{
+    list-style-type: disc;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 20px 0;
+    border-bottom: 2px solid #333;
 }
 
 #courses-section{
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: inherit;
+    gap: 20px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.course{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: 2px solid;
+    height: 200px;
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.course h3{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+.course a{
+    cursor: pointer;
 }
 
 #featured-courses li, #announcements-section li, #courses-section li{
