@@ -18,43 +18,86 @@
         </nav>
     </header>
     <div id="container">
-        <aside id="sidebar-container">
-            <button id="collapseButton">X</button>
-            <div id="sidebar">
-                <h2>Student Dashboard</h2>
-                <ul>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="settings.html">Settings</a></li>
-                    <li><a href="logout.html">Logout</a></li>
-                    <li><a href="help.html">Help</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                </ul>
-            </div>
-        </aside>
         <main id="main-content">
             <div id="content">
-                <h1>Welcome to the Student Learning System</h1>
+                <h1>Welcome Back</h1>
                 <p>This is a platform for students to enhance their learning experience.</p>
                 <p>Explore our courses and resources to get started!</p>
-                <h2>Featured Courses</h2>
             </div>
             <section id="featured-courses">
                 <h2>Recently opened Courses</h2>
                 <ul id="recent-courses-list">
-                    <li><a href="course1.html">Course Title 1</a></li>
-                    <li><a href="course2.html">Course Title 2</a></li>
-                    <li><a href="course3.html">Course Title 3</a></li>
-                    <li><a href="course4.html">Course Title 4</a></li>
-                    <li><a href="course5.html">Course Title 5</a></li>
+                    <div class="card">
+                        <div id="card-header"></div>
+                        <h2>Data Science and Machine Learning Basics</h2>
+                        <p>
+                            <strong>Instructor:</strong> John Doe<br>
+                            <strong>Duration:</strong> 4 weeks<br>
+                            <strong>Start Date:</strong> 2023-10-01<br>
+                            <strong>End Date:</strong> 2023-10-31<br>
+                            <strong>Enrollment:</strong> Open<br>
+                        </p>
+                        <div id="lesson-progress-container">
+                            <label for="lesson-progress">Lesson Progress:</label>
+                            <progress id="lesson-progress" max="100" value="70"></progress>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-header"></div>
+                        <h2>Cybersecurity Fundamentals</h2>
+                        <p>
+                            <strong>Instructor:</strong> John Doe<br>
+                            <strong>Duration:</strong> 4 weeks<br>
+                            <strong>Start Date:</strong> 2023-10-01<br>
+                            <strong>End Date:</strong> 2023-10-31<br>
+                            <strong>Enrollment:</strong> Open<br>
+                        </p>
+                        <div id="lesson-progress-container">
+                            <label for="lesson-progress">Lesson Progress:</label>
+                            <progress id="lesson-progress" max="100" value="70"></progress>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-header"></div>
+                        <h2>Mobile App Development with Flutter</h2>
+                        <p>
+                            <strong>Instructor:</strong> John Doe<br>
+                            <strong>Duration:</strong> 4 weeks<br>
+                            <strong>Start Date:</strong> 2023-10-01<br>
+                            <strong>End Date:</strong> 2023-10-31<br>
+                            <strong>Enrollment:</strong> Open<br>
+                        </p>
+                        <div id="lesson-progress-container">
+                            <label for="lesson-progress">Lesson Progress:</label>
+                            <progress id="lesson-progress" max="100" value="70"></progress>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card-header"></div>
+                        <h2>Cloud Computing with AWS</h2>
+                        <p>
+                            <strong>Instructor:</strong> John Doe<br>
+                            <strong>Duration:</strong> 4 weeks<br>
+                            <strong>Start Date:</strong> 2023-10-01<br>
+                            <strong>End Date:</strong> 2023-10-31<br>
+                            <strong>Enrollment:</strong> Open<br>
+                        </p>
+                        <div id="lesson-progress-container">
+                            <label for="lesson-progress">Lesson Progress:</label>
+                            <progress id="lesson-progress" max="100" value="70"></progress>
+                        </div>
+                    </div>
                 </ul>
             </section>
             <section id="announcements-section">
-                <h2>Announcements</h2>
-                <ul id="announcements-list">
-                    <li>New course on Web Development starting next week!</li>
-                    <li>Don't forget to submit your assignments by Friday.</li>
-                    <li>Join our webinar on Study Techniques this Saturday.</li>
-                </ul>
+                <div id="announcements-container">
+                    <h2>Announcements</h2>
+                    <ul id="announcements-list">
+                        <li>New course on Web Development starting next week!</li>
+                        <li>Don't forget to submit your assignments by Friday.</li>
+                        <li>Join our webinar on Study Techniques this Saturday.</li>
+                    </ul>
+                </div>
             </section>
             <section id="courses-section">
                 <article class="course">

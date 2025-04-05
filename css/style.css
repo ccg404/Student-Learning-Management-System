@@ -54,101 +54,19 @@ header{
     border-radius: 5px;
 }
 
-#container{
-    display: flex;
-    justify-content: center;
-}
-
-#sidebar-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 15%;
-    height: auto;
-    background-color: #444;
-}
-
-
-#sidebar{
-    position: absolute;
-    top: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 10px;
-    width: 100%;
-    border-radius: 5px;
-    gap: 20px;
-    overflow: hidden;
-}
-
-#sidebar h2{
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
-    margin: 0;
-}
-
-#sidebar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#sidebar li{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 5px;
-    width: 100%;
-    border-radius: 5px;
-}
-
-#sidebar a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: large;
-    padding: 20px;
-}
-
-#sidebar a:hover{
-    background-color: #555;
-    color: white;
-    border-radius: 5px;
-}
-
-#collapseButton{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: large;
-    cursor: pointer;
-}
-
-#collapseButton:hover{
-    background-color: #555;
-    color: white;
-    border-radius: 5px;
-}
-
-
 #main-content{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    gap: 150px;
     height: auto;
     width: 100%;
+    margin-top: 100px;
 }
+
+
 
 #content{
     display: block;
@@ -156,8 +74,18 @@ header{
     flex-direction: column;
     width: 100%;
     height: auto;
+    padding: 20px 0;
 }
 
+#content h1{
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#content p{
+    font-size: 1.2em;
+    margin: 20px 0;
+}
 
 #featured-courses{
     width: inherit;
@@ -169,13 +97,90 @@ header{
 #announcements-section{
     width: inherit;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#announcements-section h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0 10px;
+}
+
+#announcements-container{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid;
+    box-shadow: 0 4px 8px black;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
 }
 
 #courses-section{
+    display: flex;
+    justify-content: center;
+    align-self: center;
     width: inherit;
 }
 
 #featured-courses li, #announcements-section li, #courses-section li{
     list-style: none;
     text-decoration: none;
+}
+
+#featured-courses a, #announcements-section a, #courses-section a{
+    color: #333;
+    text-decoration: none;
+    cursor: none;
+}
+
+#recent-courses-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    border: 2px solid;
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.card h2{
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+.card label, .card progress{
+    padding: 0 20px;
+}
+
+.card p {
+    padding: 0 20px;
+    display: block;
+    text-align: justify;
+}
+
+progress{
+    padding: 0 20px;
+}
+
+#card-header{
+    width: 100%;
+    height: 60px;
+    background-color: #444;
 }
