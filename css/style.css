@@ -64,6 +64,7 @@ header{
     height: auto;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -231,3 +232,57 @@ progress{
     height: 60px;
     background-color: #444;
 }
+
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#footer-content, #footer-links{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#social-media-links, #footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#social-media-links li, #footer-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social-media-links a, #footer-list a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+}
+
+
