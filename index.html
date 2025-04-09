@@ -12,7 +12,16 @@
             <ul id="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
+                <li class="dropdown">
+                    <a href="##" class="dropdown-toggle">Courses <span class="arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="python.html">Python Programming</a>
+                        <a href="web-dev.html">Web Development</a>
+                        <a href="data-science.html">Data Science</a>
+                        <a href="cybersecurity.html">Cybersecurity</a>
+                        <a href="cloud.html">Cloud Computing</a>
+                    </div>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -30,14 +39,16 @@
                     <div class="card">
                         <div id="card-header"></div>
                         <h2>Data Science and Machine Learning Basics</h2>
-                        <p>
-                            <strong>Instructor:</strong> John Doe<br>
-                            <strong>Duration:</strong> 4 weeks<br>
-                            <strong>Start Date:</strong> 2023-10-01<br>
-                            <strong>End Date:</strong> 2023-10-31<br>
-                            <strong>Enrollment:</strong> Open<br>
-                        </p>
-                        <div id="lesson-progress-container">
+                        <div class="course-content">
+                            <p>
+                                <strong>Instructor:</strong> John Doe<br>
+                                <strong>Duration:</strong> 4 weeks<br>
+                                <strong>Start Date:</strong> 2023-10-01<br>
+                                <strong>End Date:</strong> 2023-10-31<br>
+                                <strong>Enrollment:</strong> Open<br>
+                            </p>
+                        </div>
+                        <div class="lesson-progress-container">
                             <label for="lesson-progress">Lesson Progress:</label>
                             <progress id="lesson-progress" max="100" value="30"></progress>
                         </div>
@@ -52,7 +63,7 @@
                             <strong>End Date:</strong> 2023-10-31<br>
                             <strong>Enrollment:</strong> Open<br>
                         </p>
-                        <div id="lesson-progress-container">
+                        <div class="lesson-progress-container">
                             <label for="lesson-progress">Lesson Progress:</label>
                             <progress id="lesson-progress" max="100" value="50"></progress>
                         </div>
@@ -67,7 +78,7 @@
                             <strong>End Date:</strong> 2023-10-31<br>
                             <strong>Enrollment:</strong> Open<br>
                         </p>
-                        <div id="lesson-progress-container">
+                        <div class="lesson-progress-container">
                             <label for="lesson-progress">Lesson Progress:</label>
                             <progress id="lesson-progress" max="100" value="75"></progress>
                         </div>
@@ -82,7 +93,7 @@
                             <strong>End Date:</strong> 2023-10-31<br>
                             <strong>Enrollment:</strong> Open<br>
                         </p>
-                        <div id="lesson-progress-container">
+                        <div class="lesson-progress-container">
                             <label for="lesson-progress">Lesson Progress:</label>
                             <progress id="lesson-progress" max="100" value="25"></progress>
                         </div>
